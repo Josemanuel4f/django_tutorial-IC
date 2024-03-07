@@ -14,7 +14,7 @@ pipeline {
             stages {
                 stage('Clone') {
                     steps {
-                        git branch:'master',url:'https://github.com/Josemanuel4f/django_tutorial-IC'
+                        git branch:'main',url:'https://github.com/Josemanuel4f/django_tutorial-IC'
                     }
                 }
                 stage('Install') {
@@ -36,7 +36,7 @@ pipeline {
             stages {
                 stage('CloneAnfitrion') {
                     steps {
-                        git branch:'master',url:'https://github.com/Josemanuel4f/django_tutorial-IC'
+                        git branch:'main',url:'https://github.com/Josemanuel4f/django_tutorial-IC'
                     }
                 }
                 stage('BuildImage') {
