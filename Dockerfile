@@ -3,6 +3,7 @@ WORKDIR /usr/src/app
 COPY django_tutorial ./
 COPY settings.py django_tutorial/settings.py
 RUN pip install --root-user-action=ignore --upgrade pip && pip install --root-user-action=ignore django mysqlclient
+COPY polls.sh ./
 RUN chmod +x polls.sh
 ENV ALLOWED_HOSTS=*
 ENV HOST=mariadb
